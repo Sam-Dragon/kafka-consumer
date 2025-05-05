@@ -23,6 +23,8 @@
        Property: "spring.kafka.consumer.group-id" <br><br>
 
   > Idempotent Consumer
+    - It is useful in consuming duplicate messages which happens generally due to exceptions or failures
+      Property: "spring.kafka.consumer.??" <br>
 
   > Transactions
     - **[RECOMMENDED]**
