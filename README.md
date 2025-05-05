@@ -27,7 +27,6 @@
       Property: "spring.kafka.consumer.??" <br>
 
   > Transactions
-    - **[RECOMMENDED]**
     -  scenarios where events are very critical like banking systems. send duplicate messages is nightmare. To avoid this transactions are introduced <br>
-    - It can be enable with the below property. It accepts READ_UNCOMMITTED [**Default**], READ_COMMITTED  <br>
+    - It can be enable with the below property. It accepts READ_UNCOMMITTED [**Default**], READ_COMMITTED **RECOMMENDED**], <br>
       Property: "spring.kafka.consumer.isolation-level" <br>
