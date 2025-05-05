@@ -18,8 +18,14 @@
         Property: "spring.kafka.consumer.key-deserializer" <br>
         Property: "spring.kafka.consumer.value-deserializer" <br><br>
 
-   > **Consumer Group**
+  > **Consumer Group**
      - list of consumers group together in order to work with messages
        Property: "spring.kafka.consumer.group-id" <br><br>
 
-   > Idempotent Consumer
+  > Idempotent Consumer
+
+  > Transactions
+    - **[RECOMMENDED]**
+    -  scenarios where events are very critical like banking systems. send duplicate messages is nightmare. To avoid this transactions are introduced <br>
+    - It can be enable with the below property. It accepts READ_UNCOMMITTED [**Default**], READ_COMMITTED  <br>
+      Property: "spring.kafka.consumer.isolation-level" <br>
