@@ -21,3 +21,5 @@
    > **Consumer Group**
      - list of consumers group together in order to work with messages
        Property: "spring.kafka.consumer.group-id" <br><br>
+
+   > Idempotent Consumer
